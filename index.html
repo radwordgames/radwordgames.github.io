@@ -51,18 +51,19 @@
 										<li><form><input type="button" value="Enter Beta Password" onClick="p()"></form></li>
 										<script>
 										function p() {
+											var type = "digitalwords";
 											var t = 1; var p = prompt('Please Enter Your Password',' ');
 											while (t < 3) {
 											if (!p)
 												history.go(-1);
-												if (p.toLowerCase() == "digitalwords") {
+												if (p.toLowerCase() == type) {
 													window.location.href = 'index-live.html';
 													break;
 											}
 											t+=1;
 											var p = prompt('Access Denied - Password Incorrect.','Password');
 										}
-										if (p.toLowerCase()!="digitalalcohol" & t ==3)
+										if (p.toLowerCase()!=type & t ==3)
 											history.go(-1);
 											return " ";
 										}
