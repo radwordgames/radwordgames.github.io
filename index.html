@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!--
+	Rad Bar Games
+	radbargames.com | webdev@radbargames.com
+-->
+<html>
+	<head>
+		<title>Rad Bar Games - Home | Rad Bar Games</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Header -->
+			<header id="header">
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Beer Pub</a></li>
+					<li><a href="#">Wine Bar</a></li>
+					<li><a href="#">Spirits Bar</a></li>
+				</ul>
+			</nav>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper featured style1">
+						<div class="inner">
+							<span class="image"><img src="images/your-digital-bar.png" alt="Your Digital Bar" /></span>
+							<div class="content">
+								<header>
+									<h1>Rad Bar Games</h1>
+									<p>Digital beer, wine and drinks.<br />
+									Please bartend responsibly.</p>
+								</header>
+								<footer>
+									<ul class="actions">
+										<li><form><input type="button" value="Enter Beta Password" onClick="p()"></form></li>
+										<script>
+										function p() {
+											var t = 1; var p = prompt('Please Enter Your Password',' ');
+											while (t < 3) {
+											if (!p)
+												history.go(-1);
+												if (p.toLowerCase() == "digitalalcohol") {
+													window.location.href = 'index-live.html';
+													break;
+											}
+											t+=1;
+											var p = prompt('Access Denied - Password Incorrect.','Password');
+										}
+										if (p.toLowerCase()!="digitalalcohol" & t ==3)
+											history.go(-1);
+											return " ";
+										}
+										</script>
+
+									</ul>
+								</footer>
+							</div>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="copyright">
+							<p>&copy; 2018 Rad Razor, LLC. All rights reserved.</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
