@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<title>Drinky Bar - Be the Bartender | Rad Razor Games</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="Be the bartender! Play Drinky Bar and master the art of drink mixing. Play online now - free!" /> 
+    <meta property="fb:app_id" content="244191149318794" />
+	<meta property="og:type" content="game" />
+  	<meta property="og:url" content="http://www.radrazorgames.com/f-fb/poly-share-full.html" />
+  	<meta property="og:type" content="website" />
+  	<meta property="og:title" content="Drinky Bar" />
+  	<meta property="og:description" content="Be the bartender! Play Drinky Bar and master the art of drink mixing. Play online now - free!" />
+  	<meta property="og:image" content="http://www.radrazorgames.com/games/drinky-bar_game_beer_wine_spirits_cocktails.png" />
+  	<meta property="og:image:alt" content="Drinky Bar - Raise the Bartender | Rad Razor Games" />
+    <style>
+	.webgl-content * {border: 0; margin: 0; padding: 0}
+	.webgl-content {position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+	.webgl-content .logo, .progress {position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+	.webgl-content .logo {background: url('TemplateData/drinky-bar-beer-wine-cocktails-play-online.png') no-repeat center / contain; width: 800px; height: 600px;}
+	.webgl-content .logo.Dark {background-image: url('TemplateData/drinky-bar-beer-wine-cocktails-play-online.png');}
+	</style>
+	<link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Default WebGL.json", {onProgress: UnityProgress});
+    </script>
+    <script>
+	function FinishWebLoad(arg) {
+    	document.getElementById("loadLogo").style.display = "none";
+	}
+	</script>
+  </head>
+  <body style="background-color: black">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 800px; height: 600px; margin:0 auto;"></div>
+      <div id="loadLogo" class="logo Dark"></div>
+    </div>
+  </body>
+</html>
