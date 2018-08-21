@@ -1,4 +1,3 @@
 https://radwordgames.github.io/index.html
 https://radwordgames.github.io/games/nerdly-words/play-nerdly-words.html
-https://radwordgames.github.io/games/poly-anagrams/play-poly-anagrams.html
 https://radwordgames.github.io/privacy/index.html
